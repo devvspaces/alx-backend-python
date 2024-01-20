@@ -4,10 +4,10 @@ Module for 0. Async Generator.
 """
 import asyncio
 import random
-from typing import Any, AsyncGenerator
+from typing import AsyncGenerator
 
 
-async def async_generator() -> AsyncGenerator[float, Any, None]:
+async def async_generator() -> AsyncGenerator[float, None]:
     """
     This coroutine loops 10 times, each time asynchronously wait 1 second,
     """
