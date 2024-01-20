@@ -8,13 +8,13 @@ from typing import List
 wait_random = __import__('0-basic_async_syntax').wait_random
 
 
-async def run(response: List[int], max_delay: int):
+async def run(response: List[int], max_delay: int) -> None:
     """Run function"""
     wait = await wait_random(max_delay)
     response.append(wait)
 
 
-async def wait_n(n: int, max_delay: int = 10) -> float:
+async def wait_n(n: int, max_delay: int = 10) -> List[float]:
     """Wait for random time"""
     responses = []
     tasks = []
